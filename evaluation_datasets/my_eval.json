@@ -1,0 +1,90 @@
+{
+    "examples": [
+        {
+            "query": "What is Adhil A Backer's current professional role and company?",
+            "relevant_doc_ids": [
+                "resume_chunk_experience_1"
+            ],
+            "relevance_scores": {
+                "resume_chunk_experience_1": 3.0
+            },
+            "ground_truth_answer": "Adhil is currently working as an AI Engineer (Contract) at Predictores.ai, a role he has held since September 2025[cite: 15, 16, 17].",
+            "metadata": {
+                "category": "experience",
+                "difficulty": "easy"
+            }
+        },
+        {
+            "query": "Which programming languages and frameworks does the candidate specialize in?",
+            "relevant_doc_ids": [
+                "resume_chunk_skills"
+            ],
+            "relevance_scores": {
+                "resume_chunk_skills": 3.0
+            },
+            "ground_truth_answer": "The candidate specializes in Python (3.x), Go (Golang), Java, JavaScript, and TypeScript[cite: 10]. [cite_start]His framework expertise includes FastAPI, Django, Vue.js, Spring Boot, Gin, GORM, and React.js[cite: 11].",
+            "metadata": {
+                "category": "skills",
+                "difficulty": "easy"
+            }
+        },
+        {
+            "query": "Describe the significant performance improvements Adhil achieved at AcelrTech Labs.",
+            "relevant_doc_ids": [
+                "resume_chunk_experience_2"
+            ],
+            "relevance_scores": {
+                "resume_chunk_experience_2": 3.0
+            },
+            "ground_truth_answer": "At AcelrTech Labs, Adhil redesigned invoice payment workflows using Vue.js and FastAPI, achieving a 40x performance improvement by reducing processing time from 3 minutes to 5 seconds[cite: 27]. [cite_start]He also implemented Role-Based Access Control (RBAC) filtering with Redis caching, which improved overall system responsiveness by 30%[cite: 29].",
+            "metadata": {
+                "category": "achievements",
+                "difficulty": "hard"
+            }
+        },
+        {
+            "query": "What projects has the candidate developed related to travel or research assistance?",
+            "relevant_doc_ids": [
+                "resume_chunk_projects"
+            ],
+            "relevance_scores": {
+                "resume_chunk_projects": 3.0
+            },
+            "ground_truth_answer": "The candidate developed 'VocGuide', an AI-powered travel assistant that generates personalized itineraries and audio guides[cite: 49]. [cite_start]He also built a 'Self-Correcting Research Assistant', a multi-agent system powered by LangGraph that plans, researches, and synthesizes answers with an internal review loop[cite: 47, 48].",
+            "metadata": {
+                "category": "projects",
+                "difficulty": "medium"
+            }
+        },
+        {
+            "query": "Does the candidate have experience with cloud platforms and DevOps tools?",
+            "relevant_doc_ids": [
+                "resume_chunk_skills",
+                "resume_chunk_experience_2"
+            ],
+            "relevance_scores": {
+                "resume_chunk_skills": 2.0,
+                "resume_chunk_experience_2": 2.0
+            },
+            "ground_truth_answer": "Yes, the candidate has experience with AWS (S3), Google Cloud Platform (GCP), and Azure[cite: 13]. [cite_start]He notably led the migration of critical services from Azure to GCP at AcelrTech Labs[cite: 30]. [cite_start]He is also skilled in Linux, Bash, Git, Docker, and CI/CD pipelines[cite: 13].",
+            "metadata": {
+                "category": "technical_skills",
+                "difficulty": "medium"
+            }
+        },
+        {
+            "query": "What is the candidate's educational background?",
+            "relevant_doc_ids": [
+                "resume_chunk_education"
+            ],
+            "relevance_scores": {
+                "resume_chunk_education": 3.0
+            },
+            "ground_truth_answer": "Adhil holds a Bachelor of Technology (B.Tech) in Mechanical Engineering from TKM College of Engineering, Kollam, India, graduating with a CGPA of 8.14 (Honors)[cite: 54, 55].",
+            "metadata": {
+                "category": "education",
+                "difficulty": "easy"
+            }
+        }
+    ]
+}

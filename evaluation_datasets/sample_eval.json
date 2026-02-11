@@ -1,0 +1,43 @@
+{
+  "examples": [
+    {
+      "query": "What is the main purpose of this document?",
+      "relevant_doc_ids": ["sample_doc_chunk_0", "sample_doc_chunk_1"],
+      "relevance_scores": {
+        "sample_doc_chunk_0": 2.0,
+        "sample_doc_chunk_1": 1.0
+      },
+      "ground_truth_answer": "This is a sample evaluation dataset for testing RAG evaluation metrics.",
+      "metadata": {
+        "category": "general",
+        "difficulty": "easy"
+      }
+    },
+    {
+      "query": "What are the key features mentioned?",
+      "relevant_doc_ids": ["sample_doc_chunk_2", "sample_doc_chunk_3", "sample_doc_chunk_4"],
+      "relevance_scores": {
+        "sample_doc_chunk_2": 3.0,
+        "sample_doc_chunk_3": 2.0,
+        "sample_doc_chunk_4": 1.0
+      },
+      "ground_truth_answer": null,
+      "metadata": {
+        "category": "features",
+        "difficulty": "medium"
+      }
+    },
+    {
+      "query": "How does the system handle errors?",
+      "relevant_doc_ids": ["sample_doc_chunk_5"],
+      "relevance_scores": {
+        "sample_doc_chunk_5": 2.0
+      },
+      "ground_truth_answer": "The system implements comprehensive error handling with try-catch blocks and logging.",
+      "metadata": {
+        "category": "technical",
+        "difficulty": "medium"
+      }
+    }
+  ]
+}

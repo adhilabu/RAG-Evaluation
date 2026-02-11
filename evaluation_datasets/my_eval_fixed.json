@@ -1,0 +1,48 @@
+{
+    "examples": [
+        {
+            "query": "What is Adhil A Backer's current professional role and company?",
+            "relevant_doc_ids": [
+                "8698a711-f896-48e5-ae4e-2c481c93dee9"
+            ],
+            "relevance_scores": {
+                "8698a711-f896-48e5-ae4e-2c481c93dee9": 3.0
+            },
+            "ground_truth_answer": "Adhil is currently working as an AI Engineer (Contract) at Predictores.ai, a role he has held since September 2025.",
+            "metadata": {
+                "category": "experience",
+                "difficulty": "easy"
+            }
+        },
+        {
+            "query": "Which programming languages and frameworks does the candidate specialize in?",
+            "relevant_doc_ids": [
+                "5e512a55-51ba-4409-ad47-9287e13c4ab6"
+            ],
+            "relevance_scores": {
+                "5e512a55-51ba-4409-ad47-9287e13c4ab6": 3.0
+            },
+            "ground_truth_answer": "The candidate specializes in Python (3.x), Go (Golang), Java, JavaScript, and TypeScript. His framework expertise includes FastAPI, Django, Vue.js, Spring Boot, Gin, GORM, and React.js.",
+            "metadata": {
+                "category": "skills",
+                "difficulty": "easy"
+            }
+        },
+        {
+            "query": "Describe the significant performance improvements Adhil achieved at AcelrTech Labs.",
+            "relevant_doc_ids": [
+                "8698a711-f896-48e5-ae4e-2c481c93dee9",
+                "5e512a55-51ba-4409-ad47-9287e13c4ab6"
+            ],
+            "relevance_scores": {
+                "8698a711-f896-48e5-ae4e-2c481c93dee9": 2.0,
+                "5e512a55-51ba-4409-ad47-9287e13c4ab6": 1.0
+            },
+            "ground_truth_answer": "At AcelrTech Labs, Adhil redesigned invoice payment workflows using Vue.js and FastAPI, achieving a 40x performance improvement by reducing processing time from 3 minutes to 5 seconds. He also implemented Role-Based Access Control (RBAC) filtering with Redis caching, which improved overall system responsiveness by 30%.",
+            "metadata": {
+                "category": "achievements",
+                "difficulty": "hard"
+            }
+        }
+    ]
+}
