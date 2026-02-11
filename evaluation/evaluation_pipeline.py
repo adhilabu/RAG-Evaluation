@@ -261,6 +261,26 @@ Answer:""")
         
         return response.content
     
+    @staticmethod
+    def _nan_to_none(obj):
+        """Convert NaN values to None for JSON serialization.
+        
+        Args:
+            obj: Object to convert
+            
+        Returns:
+            Converted object with NaN replaced by None
+        """
+        import math
+        
+        if isinstance(obj, float) and math.isnan(obj):
+            return None
+        elif isinstance(obj, dict):
+            return {k: RAGEvaluator._nan_to_none(v) for k, v in obj.items()}
+        elif isinstance(obj, list):
+            return [RAGEvaluator._nan_to_none(item) for item in obj]
+        return obj
+    
     def generate_report(
         self,
         results: Dict[str, Any],
@@ -278,7 +298,9 @@ Answer:""")
         # Save full results as JSON
         json_path = output_dir / "results.json"
         with open(json_path, 'w') as f:
-            json.dump(results, f, indent=2)
+            # Convert NaN to None for valid JSON
+            cleaned_results = self._nan_to_none(results)
+            json.dump(cleaned_results, f, indent=2)
         
         # Generate markdown report
         report_path = output_dir / "report.md"
